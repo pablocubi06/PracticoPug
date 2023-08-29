@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title Ejercicio 3
+    body
+        h1 Formulario 
+        form(action='/agregar', method='post')
+
+            label(for="select") Provincia 
+            select(name='opcion')
+                option(value='') Selecciona una opción
+                each opcion in orden 
+                    option(value=opcion) #{opcion}
+        
